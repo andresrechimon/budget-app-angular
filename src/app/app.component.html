@@ -1,0 +1,15 @@
+<app-header
+[totalBudget]="getTotalBudged()"
+[totalIngress]="getTotalIngress()"
+[totalEgress]="getTotalEgress()"
+[totalPercentage]="getTotalPercentage()"
+></app-header>
+<app-form></app-form>
+
+  <div class="contenedor limpiarEstilos">
+      <app-ingress></app-ingress>
+      
+      <app-egress
+      [totalIngress]="getTotalIngress()"
+      ></app-egress>
+  </div>
