@@ -1,11 +1,9 @@
 <div class="egreso">
-    <h2 class="egreso_titulo">Egresos</h2>
-       
-        
+    <h2 class="egreso_titulo" style="padding-left: 20px;">Egresos</h2>
         <div *ngFor="let egres of egress" class="elemento limpiarEstilos" >
             <div class="elemento_descripcion"> {{egres.description}} </div>
             <div class="right limpiarEstilos">
-                <div class="elemento_valor">- {{egres.value | currency:'ARS':'$':'1.2-2'}}</div>
+                <div class="elemento_valor"> -{{egres.value | currency:'ARS':'$':'1.2-2'}}</div>
                 <div class="elemento_porcentaje">{{calculatePercentage(egres) | percent:'1.2-2'}}</div>
                 <div class="elemento_eliminar">
                     <button class="elemento_eliminar--btn"><i class="ion-ios-close-outline" (click)="deleteRecord(egres)"></i></button>

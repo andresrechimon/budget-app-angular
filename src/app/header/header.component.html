@@ -4,10 +4,9 @@
             Presupuesto Disponible:
         </div>
         <div class="presupuesto_valor"> {{totalBudget | currency:'ARS':'$':'1.2-2'}} </div>
-        
         <div class="presupuesto_ingreso limpiarEstilos">
             <div class="presupuesto_ingreso--texto">Ingresos</div>
-            <div class="right">
+            <div class="float-end">
                 <div class="presupuesto_ingreso--valor"> {{totalIngress | currency:'ARS':'$':'1.2-2'}} </div>
                 <div class="presupuesto_ingreso--porcentaje">&nbsp;</div>
             </div>
@@ -15,8 +14,8 @@
         
         <div class="presupuesto_egreso limpiarEstilos">
             <div class="presupuesto_egreso--text">Egresos</div>
-            <div class="right limpiarEstilos">
-                <div class="presupuesto_egreso--valor">- {{totalEgress | currency:'ARS':'$':'1.2-2'}} </div>
+            <div class="float-end limpiarEstilos">
+                <div class="presupuesto_egreso--valor mr-1"> -{{totalEgress | currency:'ARS':'$':'1.2-2'}} </div>
                 <div class="presupuesto_egreso--porcentaje"> {{totalPercentage | percent:'1.2-2'}}</div>
             </div>
         </div>

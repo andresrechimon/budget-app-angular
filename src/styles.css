@@ -137,7 +137,6 @@ body {
     font-family: inherit;
     font-size: 14px;
     padding: 12px 15px;
-    margin-right: 10px;
     border-radius: 5px;
     transition: border 0.3s;
 }
@@ -169,19 +168,30 @@ body {
 .agregar_btn:focus { outline: none; }
 
 .contenedor {
-    width: 1000px;
-    margin: 60px auto;
+    display: grid; 
+    place-items: center;
+  grid-auto-columns: 1fr; 
+  grid-template-columns:auto auto; 
+  grid-template-rows: 1.4fr; 
+  gap: 26px 26px; 
+  grid-template-areas: 
+    ". .";
+}
+
+@media (max-width: 900px) {
+    .contenedor{
+        display: block;
+    }
 }
 
 .ingreso {
     float: left;
-    width: 475px;
-    margin-right: 50px;
+    width: 414px;
 }
 
 .egreso {
     float: left;
-    width: 475px;
+    width: 414px;
 }
 
 h2 {
@@ -213,7 +223,7 @@ h2 {
 
 .elemento_porcentaje {
     float: left;
-    margin-left: 20px;
+    margin-left: 5px;
     transition: transform 0.3s;
     font-size: 11px;
     background-color: #FFDAD9;
@@ -267,3 +277,5 @@ h2 {
 
 .no_pagado .elemento_porcentaje { box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
 .no_pagado:hover .elemento_descripcion { font-weight: 900; }
+
+
