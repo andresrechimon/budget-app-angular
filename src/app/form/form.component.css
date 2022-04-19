@@ -1,0 +1,15 @@
+@media (min-width: 414px) {
+    br{
+        display: none;
+    }
+}
+
+@media (max-width: 414px) {
+    .agregar_descripcion{
+        width: auto;
+    }
+
+    button{
+        margin-top: 15px;
+    }
+}

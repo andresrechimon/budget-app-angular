@@ -120,12 +120,12 @@ body {
 .agregar_tipo {
     width: 55px;
     border: 1px solid #e7e7e7;
-    height: 44px;
-    font-size: 18px;
+    height: 36px;
+    font-size: 14px;
     color: inherit;
     background-color: #fff;
-    margin-right: 10px;
     font-weight: 300;
+    border-radius: 5px;
     transition: border 0.3s;
 }
 
@@ -136,7 +136,7 @@ body {
     color: inherit;
     font-family: inherit;
     font-size: 14px;
-    padding: 12px 15px;
+    padding: 9px;
     border-radius: 5px;
     transition: border 0.3s;
 }
